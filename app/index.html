@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>eHealth Systems Africa</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">  
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+<body ng-app="app">
+    <div class="header">
+           {{vm.title}}
+    </div>
+    <div class="container" ng-controller="questions_controller as vm">
+    
+        <div>
+            Depth First Traversal
+        </div>
+        <div>
+            Character In Strings
+            <div>
+                {{vm.character_in_string_nn}}
+            </div>
+            <div>
+                {{vm.character_in_string_n}}
+            </div>
+        </div>
+        <div>
+            Array Compaction
+            <div>
+                {{vm.array_compaction}}
+            </div>
+        </div>
+        <div>
+            Rotating An Arrary
+            <div>
+                {{vm.arrayRotation}}
+            </div>
+        </div>
+        <div>
+            Least Common Multiple
+            <div>
+                {{vm.multiple}}
+            </div>
+        </div>
+        <div>
+            Angulajs PouchDb Testing
+            <div>
+                {{vm.array_compaction}}           </div>
+        </div>
+    </div>
+    <div ng-controller="pouchdb_controller as vm">
+        <div>
+            {{vm.title}}
+        </div>
+    </div>
+  <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../bower_components/pouchdb/dist/pouchdb.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-pouchdb/angular-pouchdb.js"></script>
+     <script type="text/javascript" src="../app/app.js"></script> 
+</body>
+</html>
