@@ -1,7 +1,5 @@
 eHealth Programming Test
-
 How to run
-
 1. Download the “eHealthTest” file.
 2. Extract file into a directory.
 3. At command prompt, cd to the directory.
@@ -9,48 +7,57 @@ How to run
 5. Execute “bower install”.
 6. Execute” npm install –g karma-cli”.
 7. Then execute “karma start” to run the test.
-
-The answers to the questions are in Answers.txt file or “eHealth/app/app.js”, the later will run if index.html is displayed.
+The answers to the questions can be found in Answers.txt file or “eHealth/app/app.js”, the later will run if index.html is displayed.
 
 
 Question #1: Depth first tree traversal
-   
-Depth first tree traversal is one of the different ways of walking a tree. The order one is breath first transversal. Depth first tree traversal involves traversing a tree starting at the root of the tree and following a path of the tree until the last node for the path is reached, then backtracking and following the next path until it's last node is reached and so on until there are no more paths left.  
-Parse the parent and left branch until there no more node to parse. Then parse the right branch of the tree. The algorithm will keep parsing the same branch of the tree recursively until a node is encountered or a node with no more left branches of the tree is visited, afterwards it parses the parent node of the tree and then the right branch of the tree.   
-    
-                                  A
-                                /   \
-                              B       C
-                             /       /  \
-                            D      E    F
-    
-Using the (figure) tree above, a depth first traversal starting at node A will transverse from the left side of the node as thus: -> A, B, D, C, E, and F
-  
+Depth first tree traversal is one of the different ways of walking a tree. The order one is breath first transversal. Depth First search (DFS) exhaustively searches each branch of a tree to its greatest depth before backtracking to previous unexplored branch, although its problematic on deep branching graphs, as the algorithm will continue to the maximum depth of graph.
+DFS can be implemented either recursively or using a stack to maintain the list of nodes that must be enumerated. and so on until there are no more paths left.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Depth First Search Algorithm
+void Depth_First_Search(node n)
+Mark each node in the tree as Unvisited.
+count <-- 0
+For each node n in tree do
+     if n is marked as unvisited
+            call function dfs(n)
+
+Function dfs( node n)
+               count <-- count +1 (increment count of iteration)
+               mark node n with count
+               for each w in tree adjacent to node n
+                     if w is marked 0
+                            call function dfs(w) recursively.
+               
+Explanation
+
+1. From the algorithm above, mark each node as zero and set the initial count to zero.
+2. The for each node in the tree, check if the node is marked with zero
+3. If it is marked with zero, then call dfs recursive function and pass the node. 
+4. Increment the count by 1.
+5. Mark the node n with zero.
+5. For each node w in the tree that is adjacent to node n
+6. If the node w is marked as zero, then recursively call the function until all the nodes are visited.
+
+Using the (figure) above, a depth first traversal starting at node A will transverse from the left side of the node as thus: -> side of the node as thus: -> A, B, C, D, E, F, G and H
+
+
+=======================================================
     
- 
-========================================================
-var app = angular
-  .module('app', ['pouchdb']);
-app.controller('questions_controller', function ($log, $scope) {
-    var vm = this;
-    vm.title = 'Welcome to eHealth programming Questions';
-    vm.array_compaction = [1, 3, 7, 7, 8, 9, 9, 9, 10];
-    vm.array_rotation = [1, 2, 3, 4, 5, 6];
-    vm.string1 = "String";
-    vm.string2 = "test";
-    vm.number = 2;
-    vm.arrayRotation=[];
-    vm.multiple = "";
-    vm.character_in_string_nn = "";
-    vm.character_in_string_n = "";
-
-    find_chars_n_n(vm.string1, vm.string2);
-    find_chars_n(vm.string1, vm.string2);
-    arrayRotation();
-    arrayCompaction();
-    leastCommonMultiple(2, 4);
-
     //ARRAY COMPACTION
     function arrayCompaction() {
         for (var i = 0; i <= vm.array_compaction.length; i++) {
@@ -62,6 +69,8 @@ app.controller('questions_controller', function ($log, $scope) {
         return vm.array_compaction;
     }
 
+=======================================================
+
     //ROTATING AN ARRAY
     function arrayRotation() {
         var arr1 = vm.array_rotation.slice(0, vm.array_rotation.length - vm.number);
@@ -69,6 +78,8 @@ app.controller('questions_controller', function ($log, $scope) {
         vm.arrayRotation = arr2.concat(arr1);
         return vm.arrayRotation;
     }
+
+=======================================================
 
     //CHARACTERS IN (N*N) STRINGS
     function find_chars_n_n(a, b) {
@@ -83,6 +94,9 @@ app.controller('questions_controller', function ($log, $scope) {
         vm.character_in_string_nn = array;
         return array;
     }
+    
+----------------------------------------------------------------------------------------------
+    
     //CHARACTERS IN (N) STRINGS
     function find_chars_n(a, b) {
         var array = new Array();
@@ -94,8 +108,11 @@ app.controller('questions_controller', function ($log, $scope) {
         vm.character_in_string_n = array;
         return array;
     }
+    
+=======================================================
+
     //LEAST COMMON MULTIPLE
-    function leastCommonMultiple(min, max) {
+    function leastCommonMultiple(min, max) ;
         function range(min, max) {
             var myArray = [];
             for (var i = min; i <= max; i++) {
@@ -116,4 +133,6 @@ function lcm(a, b) {
         return vm.multiple;
     }
 });
+
+=======================================================
 

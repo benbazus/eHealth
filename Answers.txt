@@ -9,6 +9,7 @@
         return vm.array_compaction;
     }
 
+======================================
     //ROTATING AN ARRAY
     function arrayRotation() {
         var arr1 = vm.array_rotation.slice(0, vm.array_rotation.length - vm.number);
@@ -17,6 +18,7 @@
         return vm.arrayRotation;
     }
 
+====================================
     //CHARACTERS IN (N*N) STRINGS
     function find_chars_n_n(a, b) {
         var array = new Array();
@@ -30,6 +32,8 @@
         vm.character_in_string_nn = array;
         return array;
     }
+===================================
+
     //CHARACTERS IN (N) STRINGS
     function find_chars_n(a, b) {
         var array = new Array();
@@ -41,6 +45,8 @@
         vm.character_in_string_n = array;
         return array;
     }
+
+====================================
     //LEAST COMMON MULTIPLE
     function leastCommonMultiple(min, max) {
         function range(min, max) {
