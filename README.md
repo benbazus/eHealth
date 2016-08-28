@@ -1,34 +1,26 @@
-eHealth Programming Test
-How to run
+### eHealth Programming Test
+# How to run
 1. Download the “eHealthTest” file.
-2. Extract file into a directory.
-3. At command prompt, cd to the directory.
-4. Execute “npm install”
-5. Execute “bower install”.
-6. Execute” npm install –g karma-cli”.
-7. Then execute “karma start” to run the test.
+1. Extract file into a directory.
+1. At command prompt, cd to the directory.
+1. Execute “npm install”
+1. Execute “bower install”.
+1. Execute” npm install –g karma-cli”.
+1. Then execute “karma start” to run the test.
+
 The answers to the questions can be found in Answers.txt file or “eHealth/app/app.js”, the later will run if index.html is displayed.
 
 
-Question #1: Depth first tree traversal
+##Question #1: Depth first tree traversal
 Depth first tree traversal is one of the different ways of walking a tree. The order one is breath first transversal. Depth First search (DFS) exhaustively searches each branch of a tree to its greatest depth before backtracking to previous unexplored branch, although its problematic on deep branching graphs, as the algorithm will continue to the maximum depth of graph.
 DFS can be implemented either recursively or using a stack to maintain the list of nodes that must be enumerated. and so on until there are no more paths left.
 
 
+<img src="https://github.com/benbazus/eHealth/blob/master/eHealthTest/images/DFS.png" />
 
 
+## Depth First Search Algorithm
 
-
-
-
-
-
-
-
-
-
-
-Depth First Search Algorithm
 void Depth_First_Search(node n)
 Mark each node in the tree as Unvisited.
 count <-- 0
@@ -43,20 +35,20 @@ Function dfs( node n)
                      if w is marked 0
                             call function dfs(w) recursively.
                
-Explanation
+# Explanation
 
 1. From the algorithm above, mark each node as zero and set the initial count to zero.
-2. The for each node in the tree, check if the node is marked with zero
-3. If it is marked with zero, then call dfs recursive function and pass the node. 
-4. Increment the count by 1.
-5. Mark the node n with zero.
-5. For each node w in the tree that is adjacent to node n
-6. If the node w is marked as zero, then recursively call the function until all the nodes are visited.
+1. The for each node in the tree, check if the node is marked with zero
+1. If it is marked with zero, then call dfs recursive function and pass the node. 
+1. Increment the count by 1.
+1. Mark the node n with zero.
+1. For each node w in the tree that is adjacent to node n
+1. If the node w is marked as zero, then recursively call the function until all the nodes are visited.
 
 Using the (figure) above, a depth first traversal starting at node A will transverse from the left side of the node as thus: -> side of the node as thus: -> A, B, C, D, E, F, G and H
 
 
-=======================================================
+# ARRAY COMPACTION
     
     //ARRAY COMPACTION
     function arrayCompaction() {
@@ -69,7 +61,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return vm.array_compaction;
     }
 
-=======================================================
+# ROTATING AN ARRAY
 
     //ROTATING AN ARRAY
     function arrayRotation() {
@@ -79,7 +71,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return vm.arrayRotation;
     }
 
-=======================================================
+# CHARACTERS IN (N*N) STRINGS
 
     //CHARACTERS IN (N*N) STRINGS
     function find_chars_n_n(a, b) {
@@ -95,7 +87,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return array;
     }
     
-----------------------------------------------------------------------------------------------
+# CHARACTERS IN (N) STRINGS
     
     //CHARACTERS IN (N) STRINGS
     function find_chars_n(a, b) {
@@ -109,7 +101,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return array;
     }
     
-=======================================================
+# LEAST COMMON MULTIPLE
 
     //LEAST COMMON MULTIPLE
     function leastCommonMultiple(min, max) ;
@@ -120,10 +112,10 @@ Using the (figure) above, a depth first traversal starting at node A will transv
             }
             return myArray;
         }  
- function gcd(a, b) {
+    function gcd(a, b) {
             return !b ? a : gcd(b, a % b);
         }
-function lcm(a, b) {
+     function lcm(a, b) {
             return a * b / gcd(a, b);
         }
         vm.multiple = min;
@@ -131,8 +123,6 @@ function lcm(a, b) {
             vm.multiple = lcm(vm.multiple, n);
         });
         return vm.multiple;
-    }
-});
-
-=======================================================
+     }
+    });
 
