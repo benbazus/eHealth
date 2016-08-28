@@ -1,5 +1,5 @@
-### eHealth Programming Test
-# How to run
+# eHealth Programming Test
+### How to run
 1. Download the “eHealthTest” file.
 1. Extract file into a directory.
 1. At command prompt, cd to the directory.
@@ -35,7 +35,7 @@ Function dfs( node n)
                      if w is marked 0
                             call function dfs(w) recursively.
                
-# Explanation
+### Explanation
 
 1. From the algorithm above, mark each node as zero and set the initial count to zero.
 1. The for each node in the tree, check if the node is marked with zero
@@ -48,7 +48,7 @@ Function dfs( node n)
 Using the (figure) above, a depth first traversal starting at node A will transverse from the left side of the node as thus: -> side of the node as thus: -> A, B, C, D, E, F, G and H
 
 
-# ARRAY COMPACTION
+### ARRAY COMPACTION
     
     //ARRAY COMPACTION
     function arrayCompaction() {
@@ -61,7 +61,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return vm.array_compaction;
     }
 
-# ROTATING AN ARRAY
+### ROTATING AN ARRAY
 
     //ROTATING AN ARRAY
     function arrayRotation() {
@@ -71,7 +71,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return vm.arrayRotation;
     }
 
-# CHARACTERS IN (N*N) STRINGS
+### CHARACTERS IN (N*N) STRINGS
 
     //CHARACTERS IN (N*N) STRINGS
     function find_chars_n_n(a, b) {
@@ -87,7 +87,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return array;
     }
     
-# CHARACTERS IN (N) STRINGS
+### CHARACTERS IN (N) STRINGS
     
     //CHARACTERS IN (N) STRINGS
     function find_chars_n(a, b) {
@@ -101,7 +101,7 @@ Using the (figure) above, a depth first traversal starting at node A will transv
         return array;
     }
     
-# LEAST COMMON MULTIPLE
+### LEAST COMMON MULTIPLE
 
     //LEAST COMMON MULTIPLE
     function leastCommonMultiple(min, max) ;
