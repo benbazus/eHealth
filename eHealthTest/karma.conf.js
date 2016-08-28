@@ -15,11 +15,11 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
         'bower_components/angular/angular.js',
-      'bower_components/pouchdb/dist/pouchdb.js',
-      'bower_components/angular-pouchdb/angular-pouchdb.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'app/app.js',    
-      'app/pouchdb_put_test.js'
+        'bower_components/angular-mocks/angular-mocks.js',
+        'bower_components/pouchdb/dist/pouchdb.js',
+        'bower_components/angular-pouchdb/angular-pouchdb.js',
+        'app/app.js',    
+        'app/pouchdb_put_test.js'
     ],
 
  plugins: [
