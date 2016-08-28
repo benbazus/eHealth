@@ -8,6 +8,14 @@
 1. Execute” npm install –g karma-cli”.
 1. Then execute “karma start” to run the test.
 
+
+## Output of Angular-Pouchdb Test when executed.
+
+<img src="https://github.com/benbazus/eHealth/blob/master/eHealthTest/images/2016-08-28_173038.png" />
+
+
+
+
 The answers to the questions can be found in Answers.txt file or “eHealth/app/app.js”, the later will run if index.html is displayed.
 
 
